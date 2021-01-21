@@ -4,11 +4,11 @@ name: default
 
 steps:
 - name: test
-  image: golang:alpine
+  image: golang:1.15-alpine
   commands:
-    - "go test -v"
+    - "go test"
 - name: build
-  image: golang:alpine
+  image: golang:1.15-alpine
   commands:
     - "go build -o ./myapp"
 - name: publish
