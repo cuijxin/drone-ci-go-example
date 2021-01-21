@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: test
-  image: golang:1.10-alpine
+  image: golang:alpine
   commands:
     - "go test"
 - name: build
