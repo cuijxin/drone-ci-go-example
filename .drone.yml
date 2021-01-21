@@ -6,7 +6,7 @@ steps:
 - name: test
   image: golang:alpine
   commands:
-    - "go test"
+    - "go test -v"
 - name: build
   image: golang:alpine
   commands:
