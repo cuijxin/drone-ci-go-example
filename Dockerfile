@@ -1,4 +1,4 @@
-FROM golang:alpine AS build-env
+FROM golang:1.15-alpine AS build-env
 RUN mkdir /go/src/app
 ADD main.go /go/src/app/
 WORKDIR /go/src/app
